@@ -1,0 +1,296 @@
+
+.video_selector{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:auto;
+    z-index: -999;
+}
+.head{
+    font-family: verdana;
+    font-weight: 900;
+    color:white;
+    text-align: center;
+    margin-top:50px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.playbutton{
+    height:10%;
+    width:10%;
+    padding-top:10px;
+}
+.watchmore{
+    margin-top:8%;
+    margin-bottom:15%;
+}
+#wrapper{
+    width:100%;
+    padding:50px;
+    display: -webkit-box;
+     -webkit-box-pack : center;
+     -webkit-box-orient:horizontal;
+}
+#header{
+    font-family: 'tangerine' ,serif;
+    font-weight:900%;
+    text-align: center;
+    margin-top: 70px;
+    color: #069;
+    text-shadow:(0,0,0,0.4)4px 4px 4px 4px;
+    font-size: 35px;
+
+}
+.text{
+    color:aqua;
+    text-align: center;
+    font-size: 40px;
+     animation: spin 5s linear infinite;
+      animation-play-state: paused;
+}
+.text:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+div.box{
+    height:180px;
+    width:180px;
+    margin:auto;
+    padding: auto;
+
+
+   overflow: hidden;
+     box-shadow:(0,0,0,0.4) 2px 2px 2px 2px;
+     position: relative;
+    animation: spin 3s linear infinite;
+      animation-play-state: paused;
+      transition:  transform 1s;
+
+}
+div.box:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+   -webkit-transform: rotate(360deg); /* Safari */
+   transform: rotate(360deg);
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(1turn),scale(1.5);
+
+
+}
+}
+img{
+   border-radius:0px;
+}
+div.box div{
+    height:180px;
+    width:180px;
+    background: #000;
+    text-align: center;
+    color:white;
+    
+}
+div.effect1 div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity:8;
+    transition: opacity 700ms;
+    color: white;
+    background:transparent;
+
+}
+div.effect1 div:hover{
+    opacity:8;
+}
+
+div.effect3 div{
+    position:absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    margin-left: 200px;
+    transition:margin-left 800ms;
+    color: white;
+
+}
+div.effect3:hover div{
+    margin-left:0;
+}
+.section{
+     height:15%;
+    background:blue;
+
+}
+.section1{
+    height:100%;
+    width:100%
+    padding-top:5%;
+}
+.about-section{
+    width:100%;
+    padding:80px 0;
+    position:relative
+}
+.hr1{
+
+    color:white;
+    border:4px solid white;
+}
+.row1{
+    width:auto;
+    padding-top:90px;
+    padding-bottom: 30px;
+    position:relative;
+        
+}
+.head4{
+    text-align: center;
+   color: white;
+}
+.video-section{
+    margin-left:130px;
+    padding-left: 50px;
+}
+.row2{
+    width:auto;
+    background-size:cover;
+    position:relative;
+}
+.v1{
+    margin-right:auto;
+    margin-left:auto;
+      padding:20px 80px;
+
+}
+.hr2{
+    border:4px solid blue;
+    margin:25px;
+}
+ul{
+    float: right;
+}
+.animate{
+    -moz-animation-duration: .8s;
+            -webkit-animation-duration: .8s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+}
+ @-moz-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:150%;
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+         @-webkit-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:150%;
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+.distance{
+    padding-right:20px;
+    text-decoration-color: black;
+}
+.difference1{
+
+
+}
+.color-me{
+    color:white;
+}
+p{
+    padding:30px;
+}
+@media screen and (max-width:700px) {
+ .row1{
+    width:auto;
+    position:relative;
+    height:auto;
+        
+}
+    .hr2{
+    border:4px solid blue;
+        margin-left: 50px;
+        margin-right: 250px;
+}
+    .v2{
+        width: 300px;
+        height:300px;
+        padding:50px;
+        margin: 50px;
+    }
+    .v1{
+    margin-right:auto;
+    margin-left:auto;
+      padding:5px 5px;
+
+}
+}
+*{
+    font-size: 100%;
+    font: inherit;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+body{
+     background:url('img/bg.jpg') no-repeat center center;
+    background-size:cover;
+}
+b1:hover{
+    height:250px;
+    width:250px;
+}
+.ul{
+    list-style-type: none;
+     margin: 0;
+    padding: 0;
+}
+.alink{
+    text-decoration:none;
+    padding:10px;
+    float:left;
+}
+
+
+
+
+
+
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; 
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.15); 
+}
+
